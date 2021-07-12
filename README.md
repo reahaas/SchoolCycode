@@ -5,7 +5,8 @@ The Goal of the project is to build a school manegmant system.
 ### Sumary of my work and workflow:
 
 I read the task and the logic didn't seems so complicated, but the deployment/packing of the system looked more chalenging to me, so I started with this.
-I 3 evening to the task, and what we have here is what I succeded to perform. I enjoy to take the challenge.
+I invested 3 evenings on this task, and what we have here is what I succeded to perform. I enjoyed to take the challenge.
+
 ### Self Esteem:
 tl;dr:
 The task is not "Done". I enjoyed the process.
