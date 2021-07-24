@@ -1,4 +1,5 @@
 namespace SchoolCycode.Models
+
 {
     public class Student
     {
@@ -8,12 +9,6 @@ namespace SchoolCycode.Models
         public string LastName { get; set; }
         public string Email { get; set; }
     
-        // public Student(int Id, string FirstName, string LastName, string Email)
-        // {
-        //     this.Id = Id;
-        //     this.FirstName = FirstName;
-        //     this.LastName = LastName;
-        //     this.Email = Email;
-        // }
     }
+
 }

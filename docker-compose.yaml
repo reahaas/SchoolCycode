@@ -1,18 +1,13 @@
 version: '3'
 services:
-    schoolcycode:
+    api:
         build: .
         ports: 
-        - "8080:80"
-        - "8081:443"
-        environment: 
-            ASPNETCORE_URLS: "http://+"  #  "https://+;http://+"
-            ASPNETCORE_HTTPS_PORT: "8081"
+        - "80:80"
+        environment:
+            ASPNETCORE_URLS: "http://+"
             ASPNETCORE_ENVIRONMENT: "Development"
-            # volumes:
-            # - C:\Users\rea\AppData\Roaming\Microsoft\UserSecrets\:/root/.microsoft/usersecrets
-            # - ${HOME}/.aspnet/https:/root/.aspnet/https/
-    
+
     postgres:
         image: postgres:10.5
         restart: always

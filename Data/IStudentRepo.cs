@@ -7,5 +7,6 @@ namespace SchoolCycode.Data
     {
         IEnumerable<Models.Student> GetAppStudents();
         Models.Student GetStudentById(int id);
+        InsertStudent(Student student)
     }
 }

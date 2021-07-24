@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using SchoolCycode.Data;
+using Microsoft.EntityFrameworkCore;
+using SchoolCycode.Models;
 
 namespace SchoolCycode
 {
@@ -28,6 +30,8 @@ namespace SchoolCycode
         {
             services.AddControllers();
             services.AddScoped<IStudentRepo, MockStudentRepo>();
+            services.AddDbContext<SchoolCycodeContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("SchoolCycodeContext")));
 
             services.AddSwaggerGen(c =>
             {

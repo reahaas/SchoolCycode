@@ -20,5 +20,10 @@ namespace SchoolCycode.Data
         {
             return new Student{Id=id, FirstName="Rea", LastName="Haas", Email="asdf"};
         }
+
+        public InsertStudent(Student student)
+        {
+            return new Student{Id=id, FirstName="Rea", LastName="Haas", Email="asdf"}
+        }
     }
 }
