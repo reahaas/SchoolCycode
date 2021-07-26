@@ -29,14 +29,19 @@ namespace SchoolCycode.Controllers
             var studentItem = ((IStudentRepo)_repository).GetStudentById(id);
             return Ok(studentItem);
         }
-        [HttpPost]
-        public async Task<ActionResult<Student>> PostStudent(Student student)
-        {
-            _context.Students.Add(student);
-            await _context.SaveChangesAsync();
 
-            //return CreatedAtAction("GetStudentById", new { id = student.Id }, student);
-            return CreatedAtAction(nameof(GetStudentById), new { id = student.Id }, student);
+        [HttpPost]
+        public ActionResult PostStudent(Student student)
+        {
+
+            ((IStudentRepo)_repository).InsertStudent(student);
+//            var insert_results = {"status": 200};
+            return Ok(200);
+            //            _context.Students.Add(student);
+            //            await _context.SaveChangesAsync();
+            //
+            //            //return CreatedAtAction("GetStudentById", new { id = student.Id }, student);
+            //            return CreatedAtAction(nameof(GetStudentById), new { id = student.Id }, student);
         }
     }
 }

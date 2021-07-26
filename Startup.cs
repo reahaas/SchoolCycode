@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using SchoolCycode.Data;
 using Microsoft.EntityFrameworkCore;
 using SchoolCycode.Models;
+using SchoolCycode.Models.PostgreSQL;
 
 namespace SchoolCycode
 {

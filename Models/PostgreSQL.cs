@@ -11,6 +11,10 @@ namespace SchoolCycode.Models.PostgreSQL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql("Host=postgres;Database=Data;Username=postgres;Password=postgres");
+
+        public SchoolCycodeContext(DbContextOptions<SchoolCycodeContext> options)
+            : base(options)
+        { }
     }
 
 }

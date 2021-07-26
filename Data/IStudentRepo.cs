@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-// using SchoolCycode.Models;
+using SchoolCycode.Models;
 
 namespace SchoolCycode.Data
 {
@@ -7,6 +7,6 @@ namespace SchoolCycode.Data
     {
         IEnumerable<Models.Student> GetAppStudents();
         Models.Student GetStudentById(int id);
-        InsertStudent(Student student)
+        void InsertStudent(Student student);
     }
 }
